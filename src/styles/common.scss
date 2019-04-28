@@ -1,0 +1,35 @@
+.row-fluid  {
+  width: 100%;
+}
+.top-center {
+  background-position: top center;
+}
+.background-cover {
+  background-size: cover;
+  height: inherit;
+}
+.profile-circle {
+  background-color: azure;
+  border: 1px solid azure;
+  border-radius: 50%;
+  width: 32px;
+  margin-right: 6px;
+  height: 32px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+.no-page {
+  @include flex-center();
+  color: white;
+  font-size: 40px;
+}

@@ -1,5 +1,5 @@
 .App {
-    text-align: center;
+  
   }
   
   .App-logo {
@@ -30,5 +30,108 @@
     to {
       transform: rotate(360deg);
     }
+  }
+
+  .header-container-wrapper {
+    min-height: 400px;
+      .row-fluid-wrapper {
+        height: 300px;
+        .row-fluid {
+            height: inherit;
+            .header-section {
+                padding: 10px 200px;
+                .nav {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .nav-left {
+                        display: flex;
+                        align-items: center;
+                        .heart-icon {
+                            width: 28px;
+                            margin-right: 10px;
+                        }
+                        .nav-options {
+                            .nav-link {
+                                padding: 0px 10px;
+                            }
+                            .nav-link:hover {
+                                color: #789;
+                                cursor: pointer;
+                              }
+                        }
+                    }
+                    .nav-right {
+                        display: flex;
+                        align-items: center;
+                        .notification-wrp {
+                            margin-right: 10px;
+                            .notification {
+                                position: relative;
+                                .mail-icon {
+                                    width: 35px;
+                                    height: 24px;
+                                    margin-right: 13px;
+                                }
+                                .green-dot {
+                                    position: absolute;
+                                    background-color: purple;
+                                    width: 5px;
+                                    height: 5px;
+                                    display: inline-block;
+                                    border-radius: 50%;
+                                    border: 1px solid purple;
+                                    top: -2px;
+                                    right: 12px;
+                                }
+                            }
+                        }
+                    }
+                    .nav-item {
+                        color: white;
+                        .highlight {
+                            color: purple;
+                        }
+                    }
+                }
+             
+                .header-center {
+                    justify-content: center;
+                    .heading {
+                        color: white;
+                        font-size: 30px;
+                        .highlight {
+                            color: greenyellow;
+                            font-style: italic;
+                        }
+                    }
+                    .search-wrapper {
+                        width: 537px;
+                        margin: 0 auto;
+                        .search-input {
+                            padding: 6px 10px;
+                            width: 400px;
+                            height: 38px;
+                            border-radius: 5px;
+                            float: left;
+                            color: black;
+                            border: none;
+                            box-sizing: border-box;
+                        }
+                        .btn-submit {
+                            height: 38px;
+                            width: 120px;
+                            border: none;
+                            border-radius: 5px;
+                            float: right;
+                            color: white;
+                            background-color: purple; 
+                        }
+                    }
+                }
+            }
+
+        }
+      }
   }
   

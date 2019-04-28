@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import { Header } from '../header/header';
 
-class Home extends Component {
+class Overview extends Component {
   constructor(props) {
     super(props);
     this.state = { 
     };
   }
 
+  
   render() {
     return (
-      <div className="fitness-app">
-       {/* <Header></Header> */}
+      <div className="fitness-main-view">
+        Overview View
       </div>
     );
   }
 }
 
 
-export default (Home);
+export default (Overview);
