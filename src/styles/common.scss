@@ -30,6 +30,7 @@ a {
 }
 .no-page {
   @include flex-center();
-  color: white;
+  color: black;
+  height: 80vh;
   font-size: 40px;
 }

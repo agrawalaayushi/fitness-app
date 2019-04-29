@@ -2,13 +2,11 @@ import React from 'react';
 import {
   BrowserRouter, Route, Switch
  } from 'react-router-dom';
-import Home from '../components/home/home';
-import Schedule from '../components/main/schedule';
+import Schedule from '../components/main/schedule/schedule';
 import Overview from '../components/main/overview';
 import Articles from '../components/main/articles';
 import { Header } from '../components/header/header';
 import { Error404 } from '../components/common/error404';
-
 import '../styles/index.css';
 
 export default () => (

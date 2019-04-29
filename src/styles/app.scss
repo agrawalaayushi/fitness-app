@@ -33,13 +33,13 @@
   }
 
   .header-container-wrapper {
-    min-height: 400px;
+    position: fixed;
+    min-height: 40px;
+    width: 100%;
       .row-fluid-wrapper {
-        height: 300px;
         .row-fluid {
-            height: inherit;
             .header-section {
-                padding: 10px 200px;
+                padding: 10px 140px;
                 .nav {
                     display: flex;
                     justify-content: space-between;
@@ -94,44 +94,63 @@
                         }
                     }
                 }
-             
-                .header-center {
-                    justify-content: center;
-                    .heading {
-                        color: white;
-                        font-size: 30px;
-                        .highlight {
-                            color: greenyellow;
-                            font-style: italic;
-                        }
-                    }
-                    .search-wrapper {
-                        width: 537px;
-                        margin: 0 auto;
-                        .search-input {
-                            padding: 6px 10px;
-                            width: 400px;
-                            height: 38px;
-                            border-radius: 5px;
-                            float: left;
-                            color: black;
-                            border: none;
-                            box-sizing: border-box;
-                        }
-                        .btn-submit {
-                            height: 38px;
-                            width: 120px;
-                            border: none;
-                            border-radius: 5px;
-                            float: right;
-                            color: white;
-                            background-color: purple; 
-                        }
-                    }
-                }
             }
 
         }
       }
+  }
+  .fitness-main-view {
+      .header-section {
+          min-height: 250px;
+        .header-center {
+            justify-content: center;
+            padding-top: 70px;
+            .heading {
+                color: white;
+                font-size: 30px;
+                .highlight {
+                    color: greenyellow;
+                    font-style: italic;
+                }
+            }
+            .search-wrapper {
+                width: 537px;
+                margin: 0 auto;
+                .search-input {
+                    padding: 6px 10px;
+                    width: 400px;
+                    height: 38px;
+                    border-radius: 5px;
+                    float: left;
+                    color: black;
+                    border: none;
+                    box-sizing: border-box;
+                }
+                .btn-submit {
+                    height: 38px;
+                    width: 120px;
+                    border: none;
+                    border-radius: 5px;
+                    float: right;
+                    color: white;
+                    background-color: purple; 
+                }
+            }
+        }
+      }
+      .schedule-fitness-wrp {
+          padding: 0px 140px;
+        .ui.secondary.pointing.menu {
+            margin-top: -80px;
+            background-color: white;
+            border-radius: 5px;
+            height: 80px;
+        }
+        .ui.secondary.pointing.menu .item {
+            width: 120px;
+            height: 100px;
+        }
+      }
+
   }
   

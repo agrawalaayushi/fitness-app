@@ -10,7 +10,6 @@ export const Header = () => {
       <div className="header-container container-fluid">
         <div className="row-fluid-wrapper row-number-4">
           <div className="row-fluid">
-            {/* <section className="header-section background-cover top-center" style={{backgroundImage: 'url(https://www.hubspot.com/hubfs/e064_-_CRM_landing_page_assets/hero-couch.jpg)'}}> */}
              <section className="header-section">
                <div className="nav">
                 <div className="nav-left">
