@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Label, Menu, Tab, Icon } from 'semantic-ui-react'
+import { Tab } from 'semantic-ui-react'
 import ScheduleFitnessView from './schedule-fitness-view';
 import SchedulePilatesView from './schedule-pilates-view';
 import ScheduleYogaView from './schedule-yoga-view';
