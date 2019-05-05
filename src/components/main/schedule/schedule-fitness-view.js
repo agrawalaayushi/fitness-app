@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { NoDataFound } from '../../common/no-data-found';
+import FitnessCardView from '../../common/fitness-card-view';
 
 class ScheduleFitnessView extends Component {
   constructor(props) {
@@ -7,9 +9,9 @@ class ScheduleFitnessView extends Component {
         data: [
             {
                 name: 'Perfect Body System',
-                image: '',
+                image: "",
                 created_by: 'Jasmine',
-                description: '',
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 club_name: 'Health Forge',
                 partners: ['Multisport'],
                 review_count: 43,
@@ -46,17 +48,18 @@ class ScheduleFitnessView extends Component {
                         active: false
                     }
                 ],
+                total_active_members: 5,
                 total_members: 14,
             },
             {
                 name: 'Power Pump',
                 image: '',
                 created_by: 'Garg Admin',
-                description: '',
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 club_name: 'Iron Addicts Gym',
                 partners: ['BeActive'],
                 review_count: 21,
-                avg_review: 4.5,
+                avg_review: 3.4,
                 members: [
                     {
                         name: "Mark Jordan",
@@ -89,12 +92,13 @@ class ScheduleFitnessView extends Component {
                         active: false
                     }
                 ],
+                total_active_members: 5
             },
             {
                 name: 'Body Soul',
                 image: '',
                 created_by: 'Jammie Taylor',
-                description: '',
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 club_name: 'Gold Gym Ohio',
                 partners: ['BeActive', 'Multisport'],
                 review_count: 12,
@@ -130,17 +134,18 @@ class ScheduleFitnessView extends Component {
                         user_image: "",
                         active: false
                     }
-                ]
+                ],
+                total_active_members: 5
             },
             {
                 name: 'Rapid Fat Burning',
                 image: '',
                 created_by: 'Alice',
-                description: '',
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 club_name: 'Fit Life',
                 partners: ['Multisport'],
                 review_count: 143,
-                avg_review: 4,
+                avg_review: 2.5,
                 members: [
                     {
                         name: "Mark Jordan",
@@ -172,17 +177,18 @@ class ScheduleFitnessView extends Component {
                         user_image: "",
                         active: false
                     }
-                ]
+                ],
+                total_active_members: 5
             },
             {
                 name: 'Rapid Fat Burning',
                 image: '',
                 created_by: 'Alice',
-                description: '',
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 club_name: 'Fit Life',
                 partners: ['Multisport'],
                 review_count: 23,
-                avg_review: 4,
+                avg_review: 3.5,
                 members: [
                     {
                         name: "Mark Jordan",
@@ -214,13 +220,14 @@ class ScheduleFitnessView extends Component {
                         user_image: "",
                         active: false
                     }
-                ]
+                ],
+                total_active_members: 5
             },
             {
                 name: 'Rapid Fat Burning',
                 image: '',
                 created_by: 'Alice',
-                description: '',
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 club_name: 'Fit Life',
                 partners: ['Multisport'],
                 review_count: 21,
@@ -256,22 +263,41 @@ class ScheduleFitnessView extends Component {
                         user_image: "",
                         active: false
                     }
-                ]
+                ],
+                total_active_members: 5
             }
         ]
     };
   }
 
+  getFitnessCard (card, index) {
+    return(
+        <FitnessCardView
+          {...this.props}
+          key={index}
+          fitness={card}
+          starTotal={5}
+        />
+      )
+  }
+
   getScheduleFitnessView () {
+    const { data } = this.state
     return (
-        <div> Schedule Fitness View
+        <div className="fitness-body">
+            {data.length > 0 ? 
+                <div className={"fitness-card-wrp"}>
+                    { data.map((item, index) =>( this.getFitnessCard(item, index) )) }
+                </div> : 
+                <NoDataFound />
+            } 
         </div>
     )
   }
   
   render() {
     return (
-        <div className="schedule-fitness-wrp">
+        <div className="schedule-fitness-view">
            {this.getScheduleFitnessView()}
         </div>
     );
