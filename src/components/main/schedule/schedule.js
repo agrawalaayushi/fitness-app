@@ -32,7 +32,7 @@ class Schedule extends Component {
         { menuItem: { key: 'schedulePilates', icon: 'image', content: 'Pilates' }, render: () => <Tab.Pane>{this.getSchedulePilates()}</Tab.Pane> },
       ]
         return (
-        <Tab menu={{ secondary: true, pointing: true}} panes={panes} />
+        <Tab menu={{ secondary: true, pointing: true}} panes={panes} defaultActiveIndex={1}/>
       )
       
   }
