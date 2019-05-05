@@ -1,38 +1,6 @@
-.App {
-  
-  }
-  
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+@import "mixins.scss";
 
-  .header-container-wrapper {
+.header-container-wrapper {
     position: fixed;
     min-height: 40px;
     width: 100%;
@@ -95,7 +63,6 @@
                     }
                 }
             }
-
         }
       }
   }
@@ -139,7 +106,17 @@
         }
       }
       .schedule-fitness-wrp {
-          padding: 0px 140px;
+          padding: 0px 30px;
+          .ui.segment {
+            padding: 0px;
+            border: none;
+          }
+          @media screen and (min-width: 768px) {
+            padding: 0px 80px;
+        }
+        @media screen and (min-width: 1440px) {
+            padding: 0px 140px;
+        }
         .ui.secondary.pointing.menu {
             margin-top: -80px;
             background-color: white;
@@ -149,6 +126,88 @@
         .ui.secondary.pointing.menu .item {
             width: 120px;
             height: 100px;
+        }
+        .schedule-fitness-view {
+            .fitness-card-wrp {
+                width: 100%;
+                padding: 1em 0px;
+                margin: 0 auto;
+                flex-wrap: wrap;
+                @include space-between();
+                .fitness-card {
+                    width: 98%;
+                    max-width: 450px;
+                    height: 280px;
+                    position: relative;
+                    padding: 11px;
+                    margin-bottom: 30px;
+                    border-radius: 4px;
+                    background-color: #fff;
+                    box-shadow: 0 7px 13px 0 rgba(24,29,58,.05);
+                    border: 1px solid #f3f3f3;
+                    @media screen and (min-width: 768px) {
+                        width: 48%;
+                    }
+                    @media screen and (min-width: 1440px) {
+                        width: 31.31%;
+                    }
+                    .card-top-section {
+                        @include space-between();
+                        .card-image {
+                            width: 120px;
+                            border-radius: 5px;
+                            height: 120px;
+                            position: absolute;
+                            top: -15px;
+                            .fitness-poster {
+                                width: inherit;
+                                height: inherit;
+                            }
+                        }
+                        .card-description {
+                            margin-left: 145px;
+                        }
+                    }
+                    .card-mid-section {
+                        @include space-between();
+                    }
+                    .card-bottom-section {
+                        @include space-between();
+                         .active-members {
+                            font: 14px;
+                            .profile-circle {
+                                width: 40px;
+                                height: 40px;
+                            }
+                            span {
+                                // width:40px;
+                                // height: 40px;
+                                // border-radius: 50%;
+                                // border: 2px solid white;
+                                // display: inline-block;
+                                // position: relative;
+                                // box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+                                // -webkit-transition: .2s ease;
+                                // transition: .2s ease;
+                            }
+                            span:nth-child(n+2) { 
+                                margin-left: -15px; 
+                            }       
+                            .member-count {
+                                top: -15px;
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                font-size: 12px;
+                                justify-content: center;
+                                align-items: center;
+                                display: inline-flex;
+                                position: relative;
+                            }                 
+                         }
+                    }
+                }
+            }
         }
       }
 
