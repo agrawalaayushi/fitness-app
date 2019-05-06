@@ -46,10 +46,11 @@
                                     font-size: 12px;
                                 }
                             }
+                            .nav-item.active,
                             .nav-item:active,
                             .nav-item:hover {
                                 border-bottom: 2px solid #7063d3;
-                                padding-bottom: 4px;
+                                padding-bottom: 5px;
                                 cursor: pointer;
                               }
                         }
@@ -89,6 +90,10 @@
                         }
                         .profile-circle {
                             cursor: pointer;
+                            @media screen and (max-width: 767px) {
+                                width: 25px;
+                                height: 25px;
+                             }
                         }
                         .user-name {
                             @media screen and (max-width: 767px) {

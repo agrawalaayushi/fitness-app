@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/app.scss';
 import { Nav } from './nav'; 
 
-export const Header = () => {
+export const Header = (props) => {
   return (
     <header className="header-container-wrapper">
       <div className="header-container container-fluid">
@@ -15,7 +15,7 @@ export const Header = () => {
                   <i class="fa fa-heart-o heart-icon"></i>
                     <span className="nav-item">FIT<span className="highlight">ME</span></span>
                   </a>
-                  <Nav/>
+                  <Nav location={props}/>
                 </div>
                 <div className="nav-right">
                   <div className="notification-wrp">
@@ -25,7 +25,6 @@ export const Header = () => {
                     </div>
                   </div>
                   <div className="profile-circle">
-
                   </div>
                   <div className="user-name">
                     Aayushi

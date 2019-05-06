@@ -12,7 +12,8 @@ import '../styles/index.css';
 export default () => (
    <BrowserRouter>
       <div className="route-container">
-        <Header />
+        {/* <Header/> */}
+        <Route  path="/" render={(props) => <Header {...props}/>} />
         <Switch>
           <Route path="/" exact render={(props) => <Schedule {...props}/>} />
           <Route path="/schedule" exact render={(props) => <Schedule {...props}/>} />
