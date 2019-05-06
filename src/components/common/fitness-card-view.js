@@ -13,7 +13,7 @@ class FitnessCardView extends React.Component {
 
     getPartners(item, index) {
         return (
-            <span key={'member'+index} className="partner mute">{item}, </span>
+            <span key={'member'+index} className="sub-content partner mute">{item}, </span>
         )
     }
 
@@ -38,14 +38,14 @@ class FitnessCardView extends React.Component {
                 
                 <div className="card-description">
                    <div className="sub-heading bold">{fitness.name}</div>
-                   <div className="created-by"><span className="mute">by&nbsp;</span>{fitness.created_by}</div>
+                   <div className="created-by"><span className="sub-content mute">by&nbsp;</span>{fitness.created_by}</div>
                    <div className="description mute">{fitness.description}</div>
                 </div>
             </div>
             <div className="card-mid-section">
                 <div>
                    <div>
-                       <span className="sub-heading bold">Club</span>: <span className="mute">{fitness.club_name}</span>
+                       <span className="sub-heading bold">Club</span>: <span className="sub-content mute">{fitness.club_name}</span>
                    </div>
                    <div>
                        <span className="sub-heading bold">Partners</span>: 
@@ -54,7 +54,7 @@ class FitnessCardView extends React.Component {
                         } 
                    </div>
                    <div>
-                   <span className="sub-heading bold">Members</span>: <span className="mute">{fitness.total_active_members+'/'+members.length}</span>
+                   <span className="sub-heading bold">Members</span>: <span className="sub-content mute">{fitness.total_active_members+'/'+members.length}</span>
                    </div>
                 </div>
                 <div>
@@ -62,7 +62,7 @@ class FitnessCardView extends React.Component {
                 <div className="stars-outer">
                     <div className="stars-inner" style={starStyle}></div>
                 </div>
-                <div className="mute">({fitness.review_count} Review)</div>
+                <div className="sub-content mute">({fitness.review_count} Review)</div>
                 </div>
             </div>
             <div className="card-bottom-section">

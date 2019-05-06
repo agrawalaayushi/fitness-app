@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NoDataFound } from '../../common/no-data-found';
 import FitnessCardView from '../../common/fitness-card-view';
+import { SAMPLE_IMAGE, SAMPLE_IMAGE2, SAMPLE_IMAGE3 } from '../../../constants/images';
 
 class ScheduleFitnessView extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class ScheduleFitnessView extends Component {
         data: [
             {
                 name: 'Perfect Body System',
-                image: "",
+                image: SAMPLE_IMAGE,
                 created_by: 'Jasmine',
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 club_name: 'Health Forge',
@@ -53,7 +54,7 @@ class ScheduleFitnessView extends Component {
             },
             {
                 name: 'Power Pump',
-                image: '',
+                image: SAMPLE_IMAGE2,
                 created_by: 'Garg Admin',
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 club_name: 'Iron Addicts Gym',
@@ -96,7 +97,7 @@ class ScheduleFitnessView extends Component {
             },
             {
                 name: 'Body Soul',
-                image: '',
+                image: SAMPLE_IMAGE3,
                 created_by: 'Jammie Taylor',
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 club_name: 'Gold Gym Ohio',
@@ -139,7 +140,7 @@ class ScheduleFitnessView extends Component {
             },
             {
                 name: 'Rapid Fat Burning',
-                image: '',
+                image: SAMPLE_IMAGE3,
                 created_by: 'Alice',
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 club_name: 'Fit Life',
@@ -182,7 +183,7 @@ class ScheduleFitnessView extends Component {
             },
             {
                 name: 'Rapid Fat Burning',
-                image: '',
+                image: SAMPLE_IMAGE,
                 created_by: 'Alice',
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 club_name: 'Fit Life',
@@ -225,7 +226,7 @@ class ScheduleFitnessView extends Component {
             },
             {
                 name: 'Rapid Fat Burning',
-                image: '',
+                image: SAMPLE_IMAGE2,
                 created_by: 'Alice',
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
                 club_name: 'Fit Life',

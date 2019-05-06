@@ -4,7 +4,7 @@ import ScheduleFitnessView from './schedule-fitness-view';
 import SchedulePilatesView from './schedule-pilates-view';
 import ScheduleYogaView from './schedule-yoga-view';
 import ScheduleDanceView from './schedule-dance-view';
-
+import { COVER_IMAGE } from '../../../constants/images';
 
 class Schedule extends Component {
   constructor(props) {
@@ -39,7 +39,7 @@ class Schedule extends Component {
   render() {
     return (
       <div className="fitness-main-view">
-        <section className="header-section background-cover top-center" style={{backgroundImage: 'url(https://www.hubspot.com/hubfs/e064_-_CRM_landing_page_assets/hero-couch.jpg)'}}>
+        <section className="header-section background-cover top-center" style={{backgroundImage: 'url(' + COVER_IMAGE +')'}}>
           <div className="header-center">
             <h2 className="heading center">Let us find your perfect <span className="highlight"> &nbsp;fitness&nbsp;</span> class!</h2>
             <div className="search-wrapper">
