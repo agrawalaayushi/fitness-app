@@ -1,4 +1,4 @@
-@mixin multiLineEllipsis($width) {
+@mixin multi-line-ellipsis($width) {
   overflow: hidden;
   text-overflow: ellipsis;
   width: $width;
@@ -19,3 +19,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin space-between() {
+  display: flex;
+  justify-content: space-between;
+}
+
