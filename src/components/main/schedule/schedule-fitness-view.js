@@ -314,6 +314,7 @@ class ScheduleFitnessView extends Component {
   render() {
     return (
         <div className="schedule-fitness-view">
+            <div className="dropdown-wrp">Sort By: <span className="selected-dropdown">Closest distance</span></div>
            {this.getScheduleFitnessView()}
         </div>
     );

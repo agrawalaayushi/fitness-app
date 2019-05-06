@@ -84,3 +84,11 @@ a {
   min-height: 200px;
   background-color: black;
 }
+.dropdown-wrp {
+  font-size: 12px;
+  color: black;
+  float: right;
+  .selected-dropdown {
+    color: #7063d3;
+  }
+}
