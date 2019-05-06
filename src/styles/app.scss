@@ -7,24 +7,49 @@
       .row-fluid-wrapper {
         .row-fluid {
             .header-section {
-                padding: 10px 140px;
+                padding: 10px 5px;
+                @media screen and (min-width: 768px) {
+                    padding: 10px 80px;
+                }
+                @media screen and (min-width: 1440px) {
+                    padding: 10px 140px;
+                }
                 .nav {
-                    display: flex;
-                    justify-content: space-between;
+                    @include space-between();
                     align-items: center;
+                    color: white;
                     .nav-left {
                         display: flex;
                         align-items: center;
                         .heart-icon {
-                            width: 28px;
-                            margin-right: 10px;
+                            font-size: 15px;
+                            color: white;
+                            margin-right: 3px;
+                           
+                            @media screen and (min-width: 768px) {
+                                font-size: 24px;
+                                margin-right: 10px;
+                            }
                         }
                         .nav-options {
-                            .nav-link {
-                                padding: 0px 10px;
+                            margin-left: 7px;
+
+                            @media screen and (min-width: 768px) {
+                                margin-left: 20px;
                             }
-                            .nav-link:hover {
-                                color: #789;
+                            .nav-item {
+                                padding: 0px 3px;
+                                font-size: 12px;
+
+                                @media screen and (min-width: 768px) {
+                                    padding: 0px 10px;
+                                    font-size: 12px;
+                                }
+                            }
+                            .nav-item:active,
+                            .nav-item:hover {
+                                border-bottom: 1px solid #7063d3;
+                                padding-bottom: 3px;
                                 cursor: pointer;
                               }
                         }
@@ -37,21 +62,37 @@
                             .notification {
                                 position: relative;
                                 .mail-icon {
-                                    width: 35px;
-                                    height: 24px;
-                                    margin-right: 13px;
+                                    font-size: 16px;
+                                    margin-right: 1px;
+
+                                    @media screen and (min-width: 768px) {
+                                        font-size: 24px;
+                                        margin-right: 13px;
+                                    }
                                 }
                                 .green-dot {
                                     position: absolute;
                                     background-color: #7063d3;
-                                    width: 5px;
-                                    height: 5px;
+                                    width: 7px;
+                                    height: 7px;
                                     display: inline-block;
                                     border-radius: 50%;
                                     border: 1px solid #7063d3;
-                                    top: -2px;
-                                    right: 12px;
+                                    top: 1px;
+                                    right: -3px;
+                                    @media screen and (min-width: 768px) {
+                                        top: 1px;
+                                        right: 10px;
+                                    }
                                 }
+                            }
+                        }
+                        .profile-circle {
+                            cursor: pointer;
+                        }
+                        .user-name {
+                            @media screen and (max-width: 767px) {
+                               display: none
                             }
                         }
                     }
@@ -69,7 +110,7 @@
   .fitness-main-view {
       .header-section {
           min-height: 250px;
-          @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             min-height:  370px;
         }
         .header-center {
@@ -124,6 +165,7 @@
       }
       .schedule-fitness-wrp {
           padding: 0px 20px;
+          min-height: 80vh;
           .ui.segment {
             padding: 0px;
             margin-top: 30px;

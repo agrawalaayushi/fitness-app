@@ -69,8 +69,8 @@ a {
   background-color: #7063d3; 
   outline: none;
   font-size: 10px;
-  @media screen and (min-width: 1024px) {
-    height: 30px;
+  @media screen and (min-width: 768px) {
+    height: 38px;
     font-size: 14px;
   }
 }

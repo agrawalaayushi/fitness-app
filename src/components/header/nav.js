@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export const Nav = () => (
-    <nav className="nav">
-        <Link to="/schedule"> Schedule
+    <nav className="nav-options">
+        <Link to="/schedule" className="nav-item"> Schedule
         </Link>
-        <Link to="/overview"> Overview
+        <Link to="/overview" className="nav-item"> Overview
         </Link>
-        <Link to="/articles"> Article
+        <Link to="/articles" className="nav-item"> Article
         </Link>
     </nav>
 )

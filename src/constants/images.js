@@ -2,7 +2,7 @@ import imagePlaceholder from '../assets/images/image-placeholder.png';
 import sampleImage from '../assets/images/yoga-mat.jpg';
 import sampleImage2 from '../assets/images/balance-beach.jpg';
 import sampleImage3 from '../assets/images/aerobics-band.jpg';
-import coverImage from '../assets/images/cover-image.jpg';
+import coverImage from '../assets/images/climb-cover-image.jpg';
 
 export const IMAGE_PLACEHOLDER = imagePlaceholder;
 export const SAMPLE_IMAGE = sampleImage;

@@ -1,7 +1,5 @@
 import React from 'react';
 import '../../styles/app.scss';
-import mail from '../../assets/svg/mail-icon.svg';
-import heartPulse from '../../assets/images/icon-heart-pulse.png'; 
 import { Nav } from './nav'; 
 
 export const Header = () => {
@@ -14,7 +12,7 @@ export const Header = () => {
                <div className="nav">
                 <div className="nav-left">
                   <a href="/" className="align-center"> 
-                    <span ><img className="heart-icon" src={heartPulse} alt="Fitness_logo"/></span>
+                  <i class="fa fa-heart-o heart-icon"></i>
                     <span className="nav-item">FIT<span className="highlight">ME</span></span>
                   </a>
                   <Nav/>
@@ -22,14 +20,15 @@ export const Header = () => {
                 <div className="nav-right">
                   <div className="notification-wrp">
                     <div className="notification">
-                      <img className="mail-icon" src={mail} alt="Notification_icon"/>
+                    <i class="fa fa-envelope-o mail-icon"></i>
+                      {/* <img className="mail-icon" src={mail} alt="Notification_icon"/> */}
                       <span className="green-dot"></span>
                     </div>
                   </div>
                   <div className="profile-circle">
 
                   </div>
-                  <div className="profile-name">
+                  <div className="user-name">
                     Aayushi
                   </div>
                 </div>
