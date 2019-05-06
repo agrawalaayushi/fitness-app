@@ -38,6 +38,7 @@ a {
   display: inline-block;
   position: relative;
   font-family: FontAwesome;
+  color: gray;
 }
  
 .stars-outer::before {
@@ -56,4 +57,20 @@ a {
 .stars-inner::before {
   content: "\f005 \f005 \f005 \f005 \f005";
   color: #f8ce0b;
+}
+
+.btn-submit {
+  height: 38px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  color: white;
+  background-color: #7063d3; 
+}
+.mute {
+  font-weight: 300;
+}
+.bold {
+  font-weight: 600;
 }

@@ -15,7 +15,7 @@ class ScheduleFitnessView extends Component {
                 club_name: 'Health Forge',
                 partners: ['Multisport'],
                 review_count: 43,
-                avg_review: 4,
+                avg_review: 2.6,
                 members: [
                     {
                         name: "Mark Jordan",
@@ -135,7 +135,7 @@ class ScheduleFitnessView extends Component {
                         active: false
                     }
                 ],
-                total_active_members: 5
+                total_active_members: 4
             },
             {
                 name: 'Rapid Fat Burning',

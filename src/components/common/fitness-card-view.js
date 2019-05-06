@@ -13,7 +13,7 @@ class FitnessCardView extends React.Component {
 
     getPartners(item, index) {
         return (
-            <span key={'member'+index} className="partner">{item}, </span>
+            <span key={'member'+index} className="partner mute">{item}, </span>
         )
     }
 
@@ -29,7 +29,6 @@ class FitnessCardView extends React.Component {
         const starStyle = {
             width: starPercentageRounded,
         };
-        console.log(starStyle)
         return (
            <div className="fitness-card"> 
             <div className="card-top-section">
@@ -38,23 +37,24 @@ class FitnessCardView extends React.Component {
                 </div>
                 
                 <div className="card-description">
-                   <div className="name">{fitness.name}</div>
-                   <div className="created-by">{fitness.created_by}</div>
-                   <div className="description">{fitness.description}</div>
+                   <div className="sub-heading bold">{fitness.name}</div>
+                   <div className="created-by"><span className="mute">by&nbsp;</span>{fitness.created_by}</div>
+                   <div className="description mute">{fitness.description}</div>
                 </div>
             </div>
             <div className="card-mid-section">
                 <div>
                    <div>
-                       Club: {fitness.club_name}
+                       <span className="sub-heading bold">Club</span>: <span className="mute">{fitness.club_name}</span>
                    </div>
                    <div>
-                       Partners: {partners.length > 0 &&
+                       <span className="sub-heading bold">Partners</span>: 
+                       {partners.length > 0 &&
                         partners.map((item, index) =>(this.getPartners(item, index) )) 
                         } 
                    </div>
                    <div>
-                       Members: {fitness.total_active_members+'/'+members.length}
+                   <span className="sub-heading bold">Members</span>: <span className="mute">{fitness.total_active_members+'/'+members.length}</span>
                    </div>
                 </div>
                 <div>
@@ -62,7 +62,7 @@ class FitnessCardView extends React.Component {
                 <div className="stars-outer">
                     <div className="stars-inner" style={starStyle}></div>
                 </div>
-                {fitness.rating}
+                <div className="mute">({fitness.review_count} Review)</div>
                 </div>
             </div>
             <div className="card-bottom-section">
@@ -72,7 +72,7 @@ class FitnessCardView extends React.Component {
                 } 
                 {members.length > 3 && <span className="profile-circle member-count">+{members.length-4}</span>}
               </div>
-              <button type="button" value="schedule" className="primary-btn">Schedule</button>
+              <button type="button" value="schedule" className="btn-submit primary-btn">Schedule</button>
             </div>
            </div>
         )
