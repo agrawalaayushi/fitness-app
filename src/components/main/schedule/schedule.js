@@ -4,6 +4,8 @@ import ScheduleFitnessView from './schedule-fitness-view';
 import SchedulePilatesView from './schedule-pilates-view';
 import ScheduleYogaView from './schedule-yoga-view';
 import ScheduleDanceView from './schedule-dance-view';
+import { FooterView } from '../../common/footer-view';
+
 import { COVER_IMAGE } from '../../../constants/images';
 
 class Schedule extends Component {
@@ -51,6 +53,7 @@ class Schedule extends Component {
         <main className="schedule-fitness-wrp">
          {this.getScheduleTabs()}
         </main>
+        <FooterView />
       </div>
     );
   }
