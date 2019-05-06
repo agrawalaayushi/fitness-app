@@ -271,6 +271,16 @@ class ScheduleFitnessView extends Component {
     };
   }
 
+  //-----------------------------------
+  // Methods
+  //-----------------------------------
+
+
+  //-----------------------------------
+  // View
+  //-----------------------------------
+
+  //render common component of fitness card view
   getFitnessCard (card, index) {
     return(
         <FitnessCardView
@@ -282,6 +292,7 @@ class ScheduleFitnessView extends Component {
       )
   }
 
+  //render multiple card view
   getScheduleFitnessView () {
     const { data } = this.state
     return (
@@ -296,6 +307,10 @@ class ScheduleFitnessView extends Component {
     )
   }
   
+  //-----------------------------------
+  // Lifecycle
+  //-----------------------------------
+
   render() {
     return (
         <div className="schedule-fitness-view">

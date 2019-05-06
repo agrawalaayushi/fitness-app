@@ -14,12 +14,22 @@ class Schedule extends Component {
     this.state = { 
     };
   }
+  //-----------------------------------
+  // Methods
+  //-----------------------------------
+
+
+  //-----------------------------------
+  // View
+  //-----------------------------------
   getScheduleYoga () {
     return <ScheduleYogaView />
   }
+
   getScheduleFitness () {
     return <ScheduleFitnessView />
   }
+
   getScheduleDance () {
     return <ScheduleDanceView />
   }
@@ -36,8 +46,11 @@ class Schedule extends Component {
         return (
         <Tab menu={{ secondary: true, pointing: true}} panes={panes} defaultActiveIndex={1}/>
       )
-      
   }
+
+  //-----------------------------------
+  // Lifecycle
+  //-----------------------------------
   render() {
     return (
       <div className="fitness-main-view">

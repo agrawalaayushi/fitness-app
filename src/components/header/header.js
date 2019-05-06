@@ -21,7 +21,6 @@ export const Header = () => {
                   <div className="notification-wrp">
                     <div className="notification">
                     <i class="fa fa-envelope-o mail-icon"></i>
-                      {/* <img className="mail-icon" src={mail} alt="Notification_icon"/> */}
                       <span className="green-dot"></span>
                     </div>
                   </div>

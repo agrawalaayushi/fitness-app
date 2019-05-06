@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Nav = () => (
     <nav className="nav-options">
-        <Link to="/schedule" className="nav-item"> Schedule
+        <Link to="/schedule" className="nav-item active"> Schedule
         </Link>
         <Link to="/overview" className="nav-item"> Overview
         </Link>
