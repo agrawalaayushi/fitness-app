@@ -24,8 +24,6 @@ Development server should run at ```http://localhost:3000/```
 - [React](https://facebook.github.io/react/) - interfaces
 - [react-router](https://github.com/rackt/react-router) - react application router
 - [react-redux](https://github.com/rackt/react-redux) - react bindings for redux
-- [Redux](https://github.com/rackt/redux) - awesome flux architecture
-- [redux-thunk](https://github.com/gaearon/redux-thunk) - thunk middleware for redux
 - [SASS](http://sass-lang.com/) - styles
 - [ESLint](http://eslint.org/) - linter
 
