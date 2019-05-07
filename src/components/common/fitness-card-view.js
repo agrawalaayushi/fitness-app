@@ -1,5 +1,6 @@
 import React from 'react';
 import { IMAGE_PLACEHOLDER } from '../../constants/images';
+import { RatingStar } from '../common/rating-star';
 
 class FitnessCardView extends React.Component {
 
@@ -24,11 +25,7 @@ class FitnessCardView extends React.Component {
         const fitnessImage = fitness.image || IMAGE_PLACEHOLDER;
         const members = fitness.members;
         const partners = fitness.partners;
-        const starPercentage = (fitness.avg_review / starTotal) * 100;
-        const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
-        const starStyle = {
-            width: starPercentageRounded,
-        };
+      
         return (
            <div className="fitness-card"> 
             <div className="card-top-section">
@@ -59,9 +56,7 @@ class FitnessCardView extends React.Component {
                 </div>
                 <div>
                
-                <div className="stars-outer">
-                    <div className="stars-inner" style={starStyle}></div>
-                </div>
+                <RatingStar avgReview={fitness.avg_review} starTotal={starTotal}/>
                 <div className="sub-content mute">({fitness.review_count} Review)</div>
                 </div>
             </div>
