@@ -16,6 +16,7 @@ class FitnessCardView extends Component {
     getMembers(item, index) {
         const userImage = item.user_image || IMAGE_PLACEHOLDER;
         return (
+            item.active &&
            <span key={'user'+index}><img className="profile-circle" src={`${userImage}`} alt="Member_image"/></span>
         )
     }
@@ -36,6 +37,7 @@ class FitnessCardView extends Component {
         const { fitness, starTotal } = this.props;
         const fitnessImage = fitness.image || IMAGE_PLACEHOLDER;
         const members = fitness.members;
+        const activeMembersCount = fitness.total_active_members;
         const partners = fitness.partners;
       
         return (
@@ -74,10 +76,10 @@ class FitnessCardView extends Component {
             </div>
             <div className="card-bottom-section">
               <div className="active-members">
-                {members.length > 0 && 
-                    members.map((item, index) =>( index < 4 && this.getMembers(item, index) )) 
+                {activeMembersCount > 0 && 
+                    members.map((item, index) =>(index<4 && this.getMembers(item, index) )) 
                 } 
-                {members.length > 3 && <span className="profile-circle member-count">+{members.length-4}</span>}
+                {activeMembersCount > 4 && <span className="profile-circle member-count">+{activeMembersCount-4}</span>}
               </div>
               <button type="button" value="schedule" className="btn-submit primary-btn">Schedule</button>
             </div>

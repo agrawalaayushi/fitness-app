@@ -36,21 +36,21 @@ class ScheduleFitnessView extends Component {
                     {
                         name: "Cheeku Jordan",
                         user_image: "",
-                        active: true
+                        active: false
                     },
                     {
                         name: "Mango Jordan",
                         user_image: "",
-                        active: true
+                        active: false
                     },
                     {
                         name: "Ruby Jordan",
                         user_image: "",
-                        active: false
+                        active: false,
                     }
                 ],
-                total_active_members: 5,
-                total_members: 14,
+                total_active_members: 3,
+                total_members: 6,
             },
             {
                 name: 'Power Pump',
@@ -93,7 +93,8 @@ class ScheduleFitnessView extends Component {
                         active: false
                     }
                 ],
-                total_active_members: 5
+                total_active_members: 4,
+                total_members: 6,
             },
             {
                 name: 'Body Soul',
@@ -131,12 +132,28 @@ class ScheduleFitnessView extends Component {
                         active: true
                     },
                     {
+                        name: "Mango Jordan",
+                        user_image: "",
+                        active: true
+                    },
+                    {
+                        name: "Mango Jordan",
+                        user_image: "",
+                        active: true
+                    },
+                    {
+                        name: "Mango Jordan",
+                        user_image: "",
+                        active: true
+                    },
+                    {
                         name: "Ruby Jordan",
                         user_image: "",
                         active: false
                     }
                 ],
-                total_active_members: 4
+                total_active_members: 8,
+                total_members: 9
             },
             {
                 name: 'Rapid Fat Burning',
@@ -174,12 +191,18 @@ class ScheduleFitnessView extends Component {
                         active: true
                     },
                     {
+                        name: "Mango Jordan",
+                        user_image: "",
+                        active: true
+                    },
+                    {
                         name: "Ruby Jordan",
                         user_image: "",
                         active: false
                     }
                 ],
-                total_active_members: 5
+                total_active_members: 6,
+                total_members: 7
             },
             {
                 name: 'Rapid Fat Burning',
@@ -222,7 +245,8 @@ class ScheduleFitnessView extends Component {
                         active: false
                     }
                 ],
-                total_active_members: 5
+                total_active_members: 5,
+                total_members: 6
             },
             {
                 name: 'Rapid Fat Burning',
@@ -265,7 +289,8 @@ class ScheduleFitnessView extends Component {
                         active: false
                     }
                 ],
-                total_active_members: 5
+                total_active_members: 5,
+                total_members: 6
             }
         ]
     };
