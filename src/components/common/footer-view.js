@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export class FooterView extends React.Component {
+export class FooterView extends Component {
     render() {
         return (
             <div className="footer-view-wrp">

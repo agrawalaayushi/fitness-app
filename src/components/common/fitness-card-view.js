@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { IMAGE_PLACEHOLDER } from '../../constants/images';
 import { RatingStar } from '../common/rating-star';
 
-class FitnessCardView extends React.Component {
+class FitnessCardView extends Component {
 
+
+    //-----------------------------------
+    // Methods
+    //-----------------------------------
+
+    //-----------------------------------
+    // View
+    //-----------------------------------
 
     getMembers(item, index) {
         const userImage = item.user_image || IMAGE_PLACEHOLDER;
@@ -16,6 +24,10 @@ class FitnessCardView extends React.Component {
         return (
             <span key={'member'+index} className="sub-content partner mute">{item}, </span>
         )
+    }
+
+    getStringSeparatedByComma (strArray) {
+        return strArray.toString()
     }
 
    
@@ -46,8 +58,8 @@ class FitnessCardView extends React.Component {
                    </div>
                    <div>
                        <span className="sub-heading bold">Partners</span>: 
-                       {partners.length > 0 &&
-                        partners.map((item, index) =>(this.getPartners(item, index) )) 
+                       {partners.length > 0 &&             
+                            <span className="sub-content partner mute">{this.getStringSeparatedByComma(partners)} </span>
                         } 
                    </div>
                    <div>
@@ -62,7 +74,7 @@ class FitnessCardView extends React.Component {
             </div>
             <div className="card-bottom-section">
               <div className="active-members">
-                {members.length > 0 &&
+                {members.length > 0 && 
                     members.map((item, index) =>( index < 4 && this.getMembers(item, index) )) 
                 } 
                 {members.length > 3 && <span className="profile-circle member-count">+{members.length-4}</span>}

@@ -12,7 +12,7 @@ export const Header = (props) => {
                <div className="nav">
                 <div className="nav-left">
                   <a href="/" className="align-center"> 
-                  <i class="fa fa-heart-o heart-icon"></i>
+                  <i className="fa fa-heart-o heart-icon"></i>
                     <span className="nav-item">FIT<span className="highlight">ME</span></span>
                   </a>
                   <Nav location={props}/>
@@ -20,7 +20,7 @@ export const Header = (props) => {
                 <div className="nav-right">
                   <div className="notification-wrp">
                     <div className="notification">
-                    <i class="fa fa-envelope-o mail-icon"></i>
+                    <i className="fa fa-envelope-o mail-icon"></i>
                       <span className="green-dot"></span>
                     </div>
                   </div>

@@ -22,20 +22,28 @@ class Schedule extends Component {
   //-----------------------------------
   // View
   //-----------------------------------
+
+  // get schedule yoga content view
   getScheduleYoga () {
     return <ScheduleYogaView />
   }
 
+  // get schedule fitness content view
   getScheduleFitness () {
     return <ScheduleFitnessView />
   }
 
+  // get schedule dance content view
   getScheduleDance () {
     return <ScheduleDanceView />
   }
+
+  // get schedule pilates content view
   getSchedulePilates () {
     return <SchedulePilatesView />
   }
+
+  // render inner tabs of Schedule Tab
   getScheduleTabs () {
       const panes = [
         { menuItem: { key: 'scheduleYoga', icon: 'image', content: 'Yoga' }, render: () => <Tab.Pane>{this.getScheduleYoga()}</Tab.Pane> },
@@ -51,6 +59,7 @@ class Schedule extends Component {
   //-----------------------------------
   // Lifecycle
   //-----------------------------------
+  
   render() {
     return (
       <div className="fitness-main-view">
