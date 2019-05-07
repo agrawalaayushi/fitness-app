@@ -13,17 +13,12 @@ class FitnessCardView extends Component {
     // View
     //-----------------------------------
 
+    //get overlapped gravatars view
     getMembers(item, index) {
         const userImage = item.user_image || IMAGE_PLACEHOLDER;
         return (
             item.active &&
            <span key={'user'+index}><img className="profile-circle" src={`${userImage}`} alt="Member_image"/></span>
-        )
-    }
-
-    getPartners(item, index) {
-        return (
-            <span key={'member'+index} className="sub-content partner mute">{item}, </span>
         )
     }
 
