@@ -32,3 +32,8 @@ Development server should run at ```http://localhost:3000/```
 **Production build**
     
     yarn build
+    
+    
+![avatar demo](https://www.fujifilmusa.com/products/digital_cameras/x/fujifilm_x20/sample_images/img/index/ff_x20_008.JPG "avatar demo")
+
+![avatar demo](https://www.fujifilmusa.com/products/digital_cameras/x/fujifilm_x20/sample_images/img/index/ff_x20_008.JPG "avatar demo")
